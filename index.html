@@ -16,56 +16,71 @@
 <body>
 
     <div class="wrapper">
+
+        <!-- The login page structure -->
         <section id="login-section">
             <h1>Welcome to Access Bank</h1>
-            <div class="login-section-text">Enter your pin</div>
+            <div class="login-section-text">ENTER YOUR PIN</div>
             <input id="pin" type="password" maxlength="4">
             <button id="login-section-proceed-btn" class="btn proceed">Proceed</button>
         </section>
     
+        <!-- Transaction options structure -->
         <section id="option-section">
                 <button id="withdral-btn" href="" class="option-section-inner-div-items">Quick Withdral</button>
                 <button id="transfer-btn" href="" class="option-section-inner-div-items">Transfer</button>
                 <button id="check-balance-btn" href="" class="option-section-inner-div-items">Check Balance</button>
                 <button id="topup-btn" href="" class="option-section-inner-div-items">Top-up Account</button>
         </section>
-    
+        
+        <!-- Funds Withdral page structure-->
         <section id="withdrawal-section">
             <h1>Enter Amount to Withdraw</h1>
             <input id="withdraw-amount" class="amount" type="text" >
             <button id="withdral-proceed-btn" class="btn">Proceed</button>
         </section>
     
+        <!-- Fund Transfer page structure -->
         <section id="Transfer-section">
             <h1>Enter Amount to Transfer</h1>
             <input id="transfer-amount" class="amount" type="text" >
             <button id="transfer-proceed" class="btn">Proceed</button>
         </section>
         
+        <!-- Account balance Page structure -->
         <section id="balance-section">
             <h1 id = "balance-section-description">Available Balance</h1>
             <div class="available-balance"></div>
             <h2>Transaction Successful</h2> 
             <h3>Do you want to perform another transaction ?</h3>
             <div class="yes-or-no">
-                <button class="yes">YES</button>
-                <button class="no">NO</button>
+                <button id="balance-section-yes" class="yes">YES</button>
+                <button id="balance-section-no" class="no">NO</button>
             </div>
         </section>
     
+        <!-- Account top-up page structure -->
         <section id="topup-section">
             <h1 >Enter Amount to Top Up</h1>
             <input id="top-up-amount" class="amount" type="text">
             <button id="topup-proceed" class="btn">Proceed</button>
         </section>
 
+        <!-- Transaction Status page structure -->
         <section id="final-output">
-            <h1>Transaction Successful</h1> 
+            <h1 id="transaction status">Transaction Successful</h1> 
+            <h3 id="hidden-message">Insufficient Balance</h3>
             <h3>Do you want to perform another transaction ?</h3>
             <div class="yes-or-no">
-                <button class="yes">YES</button>
-                <button class="no">NO</button>
+                <button id="final-output-yes" class="yes">YES</button>
+                <button id="final-output-no" class="no">NO</button>
             </div>
+        </section>
+
+        <!-- Appreciation Page structure -->
+        <section id="appreciation-section">
+            <h1>Thank You ! for banking with us</h1>
+            <h2>End of transaction.</h2>
         </section>
     </div>
 
