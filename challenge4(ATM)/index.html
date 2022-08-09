@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Bank</title>
+    <link rel="stylesheet" href="styles\styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="wrapper">
+        <section id="login-section">
+            <h1>Welcome to Access Bank</h1>
+            <div class="login-section-text">Enter your pin</div>
+            <input id="pin" type="password" maxlength="4">
+            <button id="login-section-proceed-btn" class="btn proceed">Proceed</button>
+        </section>
+    
+        <section id="option-section">
+                <button id="withdral-btn" href="" class="option-section-inner-div-items">Quick Withdral</button>
+                <button id="transfer-btn" href="" class="option-section-inner-div-items">Transfer</button>
+                <button id="check-balance-btn" href="" class="option-section-inner-div-items">Check Balance</button>
+                <button id="topup-btn" href="" class="option-section-inner-div-items">Top-up Account</button>
+        </section>
+    
+        <section id="withdrawal-section">
+            <h1>Enter Amount to Withdraw</h1>
+            <input id="withdraw-amount" class="amount" type="text" >
+            <button id="withdral-proceed-btn" class="btn">Proceed</button>
+        </section>
+    
+        <section id="Transfer-section">
+            <h1>Enter Amount to Transfer</h1>
+            <input id="transfer-amount" class="amount" type="text" >
+            <button id="transfer-proceed" class="btn">Proceed</button>
+        </section>
+        
+        <section id="balance-section">
+            <h1 id = "balance-section-description">Available Balance</h1>
+            <div class="available-balance"></div>
+            <h2>Transaction Successful</h2> 
+            <h3>Do you want to perform another transaction ?</h3>
+            <div class="yes-or-no">
+                <button class="yes">YES</button>
+                <button class="no">NO</button>
+            </div>
+        </section>
+    
+        <section id="topup-section">
+            <h1 >Enter Amount to Top Up</h1>
+            <input id="top-up-amount" class="amount" type="text">
+            <button id="topup-proceed" class="btn">Proceed</button>
+        </section>
+
+        <section id="final-output">
+            <h1>Transaction Successful</h1> 
+            <h3>Do you want to perform another transaction ?</h3>
+            <div class="yes-or-no">
+                <button class="yes">YES</button>
+                <button class="no">NO</button>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="Js/index.js"></script>
+</body>
+</html>

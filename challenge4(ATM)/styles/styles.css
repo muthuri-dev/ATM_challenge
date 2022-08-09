@@ -1,0 +1,138 @@
+:root {
+  --bg-color: #521945;
+  --wrapper-width: 50rem;
+  --heading-font: "Rubik", sans-serif;
+  --body-font: "Nunito Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #d2dad6;
+  font-family: var(--body-font);
+  text-align: center;
+  font-weight: 300;
+  min-height: 40rem;
+}
+
+h1 {
+  font-family: var(--heading-font);
+  font-size: clamp(2.3rem, 5vw, 2.7rem);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+input {
+  border-radius: 5px;
+}
+
+.wrapper {
+  max-width: var(--wrapper-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  background: var(--bg-color);
+}
+
+section {
+  max-height: 100vh;
+  min-height: 40rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 3rem;
+}
+
+#login-section div {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+#login-section input {
+  text-align: center;
+  padding: 0.2rem 0.5rem;
+  font-size: 1.5rem;
+  width: 8rem;
+  box-shadow: 0px 0px 8px 5px #888888;
+}
+
+.btn {
+  font-weight: 300;
+  font-family: var(--heading-font);
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  border-radius: 5px;
+  background-color: lawngreen;
+}
+.btn:hover {
+  color: white;
+  background-color: #1899D6;
+  cursor: pointer;
+}
+
+.option-section-inner-div-items {
+  padding: 1rem 1.5rem;
+  width: 10rem;
+  border-radius: 7px;
+  background-color: #1899D6;
+  box-shadow: 0px 0px 8px 0px #77245c;
+  border: none;
+  font-family: var(--heading-font);
+}
+.option-section-inner-div-items:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+.amount {
+  text-align: center;
+  padding: 0.2rem 0.5rem;
+  font-size: 1.5rem;
+  width: 12rem;
+  box-shadow: 0px 0px 8px 0px #888888;
+}
+
+.yes-or-no button {
+  padding: 0.5rem 1rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin-left: 2rem;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  cursor: pointer;
+}
+.yes-or-no button:first-of-type {
+  background-color: lime;
+}
+.yes-or-no button:nth-child(2) {
+  background-color: orangered;
+}
+
+#option-section,
+#withdrawal-section,
+#Transfer-section,
+#balance-section,
+#topup-section,
+#final-output {
+  display: none;
+}
+
+.available-balance {
+  font-size: 1.8rem;
+  font-family: var(--heading-font);
+  font-weight: 700;
+}/*# sourceMappingURL=styles.css.map */
