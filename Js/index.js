@@ -54,6 +54,7 @@ withdralProceedBtn.onclick = () => {
 }
 
 checkBalanceBtn.onclick = () => {
+    localStorage.setItem("balance", JSON.stringify(balance));
     optionPage.style.display = 'none';
     document.getElementById('balance-section').style.display = 'flex';
     document.querySelector('.available-balance').textContent = Number(localStorage.getItem('balance'));
@@ -65,8 +66,7 @@ topupBtn.onclick = () => {
 
 topupProceedBtn.onclick = () => {
     const topUpAmount = Number(document.getElementById("top-up-amount").value);
-    balance += topUpAmount;
-    localStorage.setItem("balance", JSON.stringify(balance));
+    balance += topUpAmount;  
     document.getElementById("top-up-amount").value = ''
     transactionStatus.style.display = 'flex';
     document.getElementById("topup-section").style.display = 'none';
